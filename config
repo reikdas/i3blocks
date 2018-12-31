@@ -29,6 +29,19 @@ command=/usr/libexec/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+
+[volume]
+#label=♪
+label=VOL
+interval=once
+signal=10
+#STEP=5%
+
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
@@ -72,20 +85,6 @@ label=CPU USE
 interval=10
 min_width=CPU 100.00%
 #separator=false
-
-# Battery indicator
-#
-# The battery instance defaults to 0.
-[battery]
-label=BAT
-#label=⚡
-interval=30
-
-# Date Time
-#
-[time]
-command=date '+%Y-%m-%d %H:%M:%S'
-interval=1
 
 # Generic media player support
 #
@@ -136,3 +135,17 @@ interval=1
 #markup=pango
 #interval=once
 #signal=11
+
+# Battery indicator
+#
+# The battery instance defaults to 0.
+[battery]
+label=BAT
+#label=⚡
+interval=30
+
+# Date Time
+#
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
