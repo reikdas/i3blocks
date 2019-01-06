@@ -142,7 +142,7 @@ interval=1
 [battery]
 label=BAT
 #label=⚡
-interval=30
+interval=10
 
 # Date Time
 #
